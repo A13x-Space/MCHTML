@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Download</title>
+    <script>
+        window.onload = function() {
+            var link = document.createElement('a');
+            link.href = 'debug.apk'; // Replace with your file URL
+            link.download = ''; // Keeps the original filename
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>
